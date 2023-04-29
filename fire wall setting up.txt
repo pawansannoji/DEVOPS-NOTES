@@ -1,0 +1,14 @@
+firewall configuration
+-----------------------------------------------------------------
+systemctl start firewalld
+
+systemctl status firewalld
+
+firewall-cmd --add-service jenkins --permanent
+
+firewall-cmd --add-port 80/tcp --permanent
+
+firewall-cmd --list-ports
+
+firewall-cmd --list-services
+
