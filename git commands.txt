@@ -1,0 +1,8 @@
+GIT COMMANDS..
+........................................
+git init                                           = to intiate git repository in CLI
+ll                                                     = to view ".git" created repository
+git add  'filename'                      = to add file code "to be commited'
+git commit -m "message"        = to commit the files in git add section
+git log 			        = to view git commited files
+git status 			        = to view git status of files

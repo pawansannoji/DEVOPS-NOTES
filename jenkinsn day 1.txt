@@ -1,0 +1,26 @@
+jenkins class ..01
+------------------------------
+when ever we build we wiil get artifact..
+after build only artifact will get
+
+continues integration    = continueos build + continues test
+continues delivery          = deployment to production is manual then it is continuos delivery.
+continues deployment  = deployment to production is automation it is called as continues deployment.
+
+STEP: GETIING REPO FROM JENKINS.IO
+
+sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
+
+STEP-2: INSTALL JAVA11
+
+amazon-linux-extras install java-openjdk11 -y
+
+STEP-3: INSTALLING GIT,MAVEN & JENKINS
+
+yum install git maven jenkins -y
+
+STEP-4: STARTING JENKINS
+
+systemctl start jenkins.service
+systemctl status jenkins.service
